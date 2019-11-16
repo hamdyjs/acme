@@ -105,7 +105,7 @@ ACME.create = function create(me) {
 			}
 		}
 	};
-	/*
+	
 	me.authorizations = {
 		// create + get challlenges
 		get: function(options) {
@@ -124,7 +124,7 @@ ACME.create = function create(me) {
 			});
 		}
 	};
-  */
+  
 	me.certificates = {
 		create: function(options) {
 			return A._getAccountKid(me, options).then(function(kid) {
