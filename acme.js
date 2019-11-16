@@ -112,7 +112,7 @@ ACME.create = function create(me) {
 			return A._getAccountKid(me, options).then(function(kid) {
 				ACME._normalizePresenters(me, options, options.challenges);
 				return ACME._orderCert(me, options, kid).then(function(order) {
-					return order.claims;
+					return order;
 				});
 			});
 		},
