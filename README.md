@@ -144,7 +144,7 @@ ACME.computeChallenge({
 | maintainerEmail    | should be a contact for the author of the code to receive critical bug and security notices                 |
 | notify             | all callback for logging events and errors in the form `function (ev, args) { ... }`                        |
 | packageAgent       | should be an RFC72321-style user-agent string to append to the ACME client (ex: mypackage/v1.1.1)           |
-| skipChallengeTests | do not do a self-check that the ACME-issued challenges will pass (not recommended)                          |
+| skipChallengeTest  | do not do a self-check that the ACME-issued challenges will pass (not recommended)                          |
 | skipDryRun: false  | do not do a self-check with self-issued challenges (not recommended)                                        |
 | subscriberEmail    | should be a contact for the service provider to receive renewal failure notices and manage the ACME account |
 
